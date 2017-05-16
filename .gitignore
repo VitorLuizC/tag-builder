@@ -1,1 +1,14 @@
-node_modules
+# Ignora os módulos do Node.js
+node_modules/*
+
+
+# Ignora arquivos e diretório de log
+logs/*
+*.log
+npm-debug.log.*
+
+# Ignora arquivos e diretório de distribuição
+dist/*
+
+# Ignore configurações do Visual Studio Code
+.vscode/*

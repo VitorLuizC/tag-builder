@@ -1,0 +1,15 @@
+# Configuração padrão dos arquivos
+[*]
+charset = utf-8
+end_of_line = crlf
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+# Configuração dos arquivos fonte
+[*.{vue,js,json,styl,pug}]
+indent_size = 2
+indent_style = space
+
+# Configuração específica dos templates Pug e componentes Vue
+[*.{pug,vue}]
+trim_trailing_whitespace = false
