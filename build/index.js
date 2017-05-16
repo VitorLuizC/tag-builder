@@ -10,6 +10,8 @@ const HtmlPlugin = require('html-webpack-plugin')
 function build(env) {
   const suffix = env === 'production' ? 'prod' : 'dev'
 
+  const config = require(`./config.${suffix}.js`)
+
   return {
     entry: './src',
     output: {
@@ -17,9 +19,9 @@ function build(env) {
       filename: 'js/[name].js'
     },
     module: {
-      rules: require(`./rules.${suffix}.js`)
+      rules: config.rules
     },
-    plugins: require(`./plugins.${suffix}.js`),
+    plugins: config.plugins,
     devtool: env === 'production' ? false : 'source-map'
   }
 }

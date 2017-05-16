@@ -1,0 +1,17 @@
+{
+  "presets": [
+    [
+      "env",
+      {
+        "target": {
+          "browsers": [
+            "> 3%",
+            "IE >= 11"
+          ]
+        },
+        "modules": false,
+        "noop": false
+      }
+    ]
+  ]
+}
