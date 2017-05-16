@@ -18,6 +18,13 @@
     "vue"
   ],
   "author": "Gabriel Marcos",
+  "maintainers": [
+    {
+      "name": "Vitor Cavalcanti",
+      "email": "vitorluizc@outlook.com",
+      "url": "https://vitorluizc.github.io"
+    }
+  ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/gabrielma19/tag_builder/issues"
